@@ -12,11 +12,13 @@
     "@sanity/client": "^6.24.1",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.68.3",
+    "@stripe/stripe-js": "^9.1.0",
     "next": "14.2.18",
     "next-sanity": "^9.8.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sanity": "^3.68.3"
+    "sanity": "^3.68.3",
+    "stripe": "^22.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",
