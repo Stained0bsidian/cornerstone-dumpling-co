@@ -6,8 +6,8 @@ import { schemaTypes } from "./sanity/schema";
 export default defineConfig({
   name: "cornerstone-dumpling",
   title: "Cornerstone Dumpling Co",
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production",
+  projectId: "zqr51v91",
+  dataset: "production",
   basePath: "/studio",
   plugins: [structureTool(), visionTool()],
   schema: {
