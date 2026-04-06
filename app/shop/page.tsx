@@ -15,7 +15,7 @@ export default function ShopPage() {
           Shop
         </h1>
         <p className="font-body text-brand-forest/80 mt-4 text-lg leading-relaxed">
-          Local pickup and delivery in the Lake Norman area—no shipping.
+          Local pickup and delivery in the Cornelius area—no shipping.
         </p>
       </header>
 

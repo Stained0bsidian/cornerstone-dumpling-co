@@ -28,13 +28,13 @@ export default function HomePage() {
         <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6">
           <div className="max-w-2xl">
             <p className="font-body mb-3 text-sm font-medium uppercase tracking-[0.25em] text-white/90">
-              Lake Norman, NC
+              Cornelius, NC
             </p>
             <h1 className="font-heading text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
               Handcrafted Dumplings Worth Savoring
             </h1>
             <p className="font-body mt-6 max-w-xl text-lg leading-relaxed text-white/95">
-              Made with care in Lake Norman, NC. Available for local pickup and
+              Made with care in Cornelius, NC. Available for local pickup and
               delivery.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">

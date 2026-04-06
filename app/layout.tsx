@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Cornerstone Dumpling Co.",
   },
   description:
-    "Premium handcrafted dumplings and pierogis from Lake Norman, NC. Local pickup and delivery.",
+    "Premium handcrafted dumplings and pierogis from Cornelius, NC. Local pickup and delivery.",
 };
 
 export default function RootLayout({
