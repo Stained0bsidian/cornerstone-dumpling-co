@@ -1,0 +1,9 @@
+{
+  "name": "Cornerstone Dumpling Co.",
+  "short_name": "Cornerstone",
+  "description": "Premium handcrafted dumplings and pierogis from Cornelius, NC.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f2ef",
+  "theme_color": "#274b3a"
+}

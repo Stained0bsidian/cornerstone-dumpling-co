@@ -7,7 +7,12 @@ import { formatPrice, products } from "@/lib/products";
 import heroImage from "../product-pierogi-gold.jpg";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: {
+    absolute:
+      "Handcrafted Dumplings & Pierogis in Cornelius, NC | Cornerstone Dumpling Co.",
+  },
+  description:
+    "Order premium handcrafted dumplings and pierogis from Cornerstone Dumpling Co. in Cornelius, NC. Local pickup, Lake Norman delivery, and small-batch ingredients.",
 };
 
 const featured = products.slice(0, 4);
@@ -45,6 +50,78 @@ export default function HomePage() {
                 Shop All Dumplings
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="border-brand-green/10 bg-white/50 border-y"
+        aria-label="Why customers choose us"
+      >
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-3 sm:gap-6 sm:px-6 sm:py-12">
+          <div className="flex gap-4 sm:flex-col sm:items-center sm:text-center">
+            <span
+              className="text-brand-green flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-green/10"
+              aria-hidden
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                className="h-6 w-6"
+              >
+                <path d="M12 3v3M8.5 6.5 12 3l3.5 3.5M6 10h12M5 10a7 7 0 0 0 14 0" />
+                <path d="M9 14h6v7H9z" />
+              </svg>
+            </span>
+            <p className="font-body text-brand-forest font-medium leading-snug">
+              Handmade from scratch
+            </p>
+          </div>
+          <div className="flex gap-4 sm:flex-col sm:items-center sm:text-center">
+            <span
+              className="text-brand-green flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-green/10"
+              aria-hidden
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                className="h-6 w-6"
+              >
+                <path d="M3 7h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" />
+                <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                <path d="M3 12h18" />
+              </svg>
+            </span>
+            <p className="font-body text-brand-forest font-medium leading-snug">
+              Local pickup &amp; delivery
+            </p>
+          </div>
+          <div className="flex gap-4 sm:flex-col sm:items-center sm:text-center">
+            <span
+              className="text-brand-green flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-green/10"
+              aria-hidden
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                className="h-6 w-6"
+              >
+                <path d="M12 22c4.97-4 8-7.58 8-12a8 8 0 1 0-16 0c0 4.42 3.03 8 8 12z" />
+                <path d="M12 8v4l2 2" />
+              </svg>
+            </span>
+            <p className="font-body text-brand-forest font-medium leading-snug">
+              Small batch, fresh ingredients
+            </p>
           </div>
         </div>
       </section>

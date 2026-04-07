@@ -10,9 +10,27 @@ export function Footer() {
               Cornerstone Dumpling Co.
             </p>
             <p className="font-body mt-2 max-w-sm text-sm text-white/80">
-              Handcrafted in Mooresville, North Carolina. Local pickup and
-              delivery only.
+              Handcrafted in Cornelius, NC. Local pickup and delivery only.
             </p>
+            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/85">
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Instagram
+              </a>
+              <a href="mailto:hello@cornerstonedumpling.com" className="hover:underline">
+                hello@cornerstonedumpling.com
+              </a>
+            </div>
+            <Link
+              href="/shop"
+              className="font-body bg-brand-cream text-brand-green hover:bg-brand-cream/90 mt-6 inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-semibold shadow-md transition-colors"
+            >
+              Order Now
+            </Link>
           </div>
           <div className="flex flex-col gap-2 text-sm">
             <Link href="/shop" className="hover:underline">

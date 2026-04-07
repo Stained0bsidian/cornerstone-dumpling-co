@@ -1,5 +1,6 @@
 "use client";
 
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useCart } from "@/context/CartContext";
 
 export function AddToCartButton({
@@ -10,13 +11,32 @@ export function AddToCartButton({
   label?: string;
 }) {
   const { addItem } = useCart();
+  const [showAdded, setShowAdded] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  const handleClick = useCallback(() => {
+    addItem(productId, 1);
+    setShowAdded(true);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(() => {
+      setShowAdded(false);
+      timeoutRef.current = null;
+    }, 1500);
+  }, [addItem, productId]);
+
   return (
     <button
       type="button"
-      onClick={() => addItem(productId, 1)}
+      onClick={handleClick}
       className="font-body bg-brand-green hover:bg-brand-green-accent focus-visible:ring-brand-green-accent text-brand-cream w-full rounded-full px-5 py-3 text-sm font-semibold shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
     >
-      {label}
+      {showAdded ? "Added!" : label}
     </button>
   );
 }
